@@ -1,7 +1,6 @@
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
+import java.util.Collections;
 
 public class ArrayListProblem3 {
     public static void main(String[] args) {
@@ -11,14 +10,8 @@ public class ArrayListProblem3 {
         list.add("C");
         list.add("D");
 
-        Iterator<String> itr = list.iterator();
-        String arr[] = new String[5];
-        int i = 0;
-        while (itr.hasNext()) {
-            arr[i] = itr.next();
-            i++;
-        }
-        System.out.println(Arrays.toString(arr));
+        Collections.reverse(list);
+        System.out.println(list);
 
     }
 }
